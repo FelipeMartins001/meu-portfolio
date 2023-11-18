@@ -1,0 +1,130 @@
+body {
+    background-color: var(--background-color-dark);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+p {
+    color: var(--border-bottom);
+
+}
+
+a {
+    color: aliceblue;
+   
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+
+.perfil {
+    width: 25vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.igzin {
+    border-radius: 50%;
+    height: 180px;
+}
+
+ul {
+    padding: 0;
+    
+}
+
+li {
+    padding: 20px;
+    color:var(--text-color);
+    display: flex;
+    text-align: center;
+   
+    
+   
+}
+ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bottom-color);
+    height: 35px;
+    width: 300px;
+   border-radius: 8px;
+   text-decoration: none;
+   border: 1px solid var(--border-bottom);
+}
+
+.social-media {
+    padding: 30px;
+    display: flex;
+
+}
+
+.social-media img{
+    padding: 22px;
+
+}
+
+:root {
+    --bottom-color: brown;
+    --background-color-dark: black;
+    --border-bottom: white;
+    --border-span: white;
+    --switch-bg-url: url(/img/moon-stars.svg);
+}
+
+.light {
+    --bottom-color: blue;
+    --background-color-dark: aliceblue;
+    --border-bottom: black;
+    --border-span: black;
+    --switch-bg-url: url(/img/sun.svg);
+}
+
+.switch {
+    position: relative;
+}
+
+.switch button {
+    border: var(--bottom-color);
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    
+   z-index: 1;
+   left: 0;
+   transform: translateY(-50%);
+   
+   
+}
+.light .switch button {
+    right: 0;
+    left: initial;
+}
+
+.switch span {
+    
+    display: block;
+    width: 64px;
+    height: 24px;
+    border-radius: 9999px;
+    border: 1px solid var(--border-span);
+   
+}
