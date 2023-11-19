@@ -83,7 +83,7 @@ ul li a{
     --background-color-dark: black;
     --border-bottom: white;
     --border-span: white;
-    --switch-bg-url: url(/img/moon-stars.svg);
+    --switch-bg-url: url(./img/moon-stars.svg);
 }
 
 .light {
@@ -91,7 +91,7 @@ ul li a{
     --background-color-dark: aliceblue;
     --border-bottom: black;
     --border-span: black;
-    --switch-bg-url: url(/img/sun.svg);
+    --switch-bg-url: url(./img/sun.svg);
 }
 
 .switch {
